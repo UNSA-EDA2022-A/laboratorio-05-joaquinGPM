@@ -15,8 +15,6 @@ public class Exercise1 {
 
     public boolean esBalanceado(String s) {
         MyStack<Character> stack = new LinkedListStack<>();
-        
-        MyStack<Character> stack = new LinkedListStack<>();
         boolean seguir=true;
         for(int i=0;i<s.length()&&seguir;i++) {
         	char c=s.charAt(i);
@@ -25,27 +23,25 @@ public class Exercise1 {
         	}
         	else if (c==')' ) {
         		char aux=stack.pop();
-        		if (aux!='(' )seguir =false;
-        		break;
+        		if (aux!='(' ) {seguir =false;
+        		break;}
         	}
         	else if (c=='}' ) {
         		char aux=stack.pop();
-        		if (aux!='{' )seguir =false;
-        		break;
+        		if (aux!='{' ) {seguir =false;
+        		break;}
         	}
         	else if (c==']' ) {
         		char aux=stack.pop();
-        		if (aux!='[' )seguir =false;
+        		if (aux!='[' ) {seguir =false;
         		break;
         	}
-        }
+        }}
         seguir = stack.isEmpty() && seguir;
-        //if(seguir)System.out.println(seguir);
-        //else System.out.println(seguir);
+        if(seguir)return seguir;
+        else return seguir;
 
-       
+        //return seguir;
     
-
-        return seguir;
     }
 }
