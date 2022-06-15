@@ -40,12 +40,12 @@ public class Exercise1 {
         	}
         }
         seguir = stack.isEmpty() && seguir;
-        if(seguir)System.out.println(seguir);
-        else System.out.println(seguir);
+        //if(seguir)System.out.println(seguir);
+        //else System.out.println(seguir);
 
        
     
 
-        return false;
+        return seguir;
     }
 }
